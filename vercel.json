@@ -1,8 +1,14 @@
 {
   "redirects": [
     {
-      "source": "https://:subdomain.twingate.me/:path*",
-      "destination": "https://twingate.me/",
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "*.twingate.me"
+        }
+      ],
+      "destination": "https://twingate.me/:path*",
       "permanent": true
     }
   ]
