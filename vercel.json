@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://:subdomain.twingate.me/:path*",
+      "destination": "https://twingate.me/",
+      "permanent": true
+    }
+  ]
+}
