@@ -1,15 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "*.twingate.me"
-        }
-      ],
-      "destination": "https://twingate.me/:path*",
-      "permanent": true
+      "source": "/:path*",  // Match all paths
+      "destination": "https://twingate.me/:path*"  // Proxy to twingate.me
     }
   ]
 }
